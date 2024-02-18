@@ -739,24 +739,31 @@ The Audi A3 Sedan is a compact luxury car known for its sporty design, powerful 
 								</div>
 							</div>
 						</div>
-						<div class="col-md-offset-1 col-md-3 col-sm-6">
+												<div class="col-md-offset-1 col-md-3 col-sm-6">
 							<div class="single-footer-widget">
-								<h2>news letter</h2>
+								<h2>newsletter</h2>
 								<div class="footer-newsletter">
-									<p>
-										Subscribe to get latest news  update and informations
-									</p>
+									<p>Subscribe to get the latest news updates and information</p>
 								</div>
 								<div class="hm-foot-email">
 									<div class="foot-email-box">
-										<input type="text" class="form-control" placeholder="Add Email">
+										<input id="emailInput" type="email" class="form-control" placeholder="Enter Email">
 									</div><!--/.foot-email-box-->
 									<div class="foot-email-subscribe">
-										<span><i class="fa fa-arrow-right"></i></span>
+										<button onclick="subscribe()" class="subscribe-button"><i class="fa fa-arrow-right"></i></button>
 									</div><!--/.foot-email-icon-->
 								</div><!--/.hm-foot-email-->
+								<p id="successMessage" style="display: none; color: green;">Successfully subscribed!</p>
 							</div>
 						</div>
+						
+						<script>
+							function subscribe() {
+								// Perform subscription logic here, e.g., sending data to server
+								// For demonstration purposes, let's just show the success message
+								document.getElementById("successMessage").style.display = "block";
+							}
+						</script>
 					</div>
 				</div>
 				<div class="footer-copyright">
